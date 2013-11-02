@@ -1,0 +1,19 @@
+<h2>New Shirt</h2>
+
+<%= form_for @shirt do |f| %>
+    <%= f.label :size %>
+    <%= f.text_field :size %> <br />
+    <%= f.label :color %>
+    <%= f.text_field :color %> <br />
+    <%= f.label :brand %> 
+    <%= f.text_field :brand %> <br />
+    <%= f.label :price %>
+    <%= f.number_field :price %> <br />
+    <%= f.label :organic %>
+    <%= f.check_box :organic %>
+
+    <br />
+    <br />
+    
+    <%= f.submit "Create Shirt" %>
+<% end %>

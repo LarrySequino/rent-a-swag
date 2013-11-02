@@ -1,0 +1,14 @@
+<h1>Shirts Index</h1>
+<ul>
+<% @shirts.each do |shirt| %>
+    <li>
+    Size: <%= shirt.size %>,
+    Color: <%= shirt.color %>,
+    Brand: <%= shirt.brand %>,
+    Price: <%= shirt.price %>,
+    Organic: <%= shirt.organic %>,
+    </li>
+<% end %>
+</ul>
+
+<%= link_to "New Shirt", '/shirts/new' %>
